@@ -1,0 +1,58 @@
+[gd_scene load_steps=3 format=3 uid="uid://cicyw2bbywa34"]
+
+[ext_resource type="Script" uid="uid://belfgef4j1qsr" path="res://game/scripts/game/screens/start/start_screen_view.gd" id="1_a1qp4"]
+[ext_resource type="Resource" uid="uid://cc0tb2oea0qjs" path="res://game/assets/screens/game_screen/game_screen_context_data.tres" id="2_klci4"]
+
+[node name="StartScreen" type="Control" node_paths=PackedStringArray("button")]
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+script = ExtResource("1_a1qp4")
+button = NodePath("Button")
+game_screen_context = ExtResource("2_klci4")
+
+[node name="ColorRect3" type="ColorRect" parent="."]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+color = Color(0.241156, 0.241156, 0.241156, 1)
+
+[node name="ColorRect" type="ColorRect" parent="."]
+layout_mode = 1
+anchors_preset = 9
+anchor_bottom = 1.0
+offset_right = 23.0
+grow_vertical = 2
+color = Color(0.412152, 0.412152, 0.412152, 1)
+
+[node name="ColorRect2" type="ColorRect" parent="."]
+layout_mode = 1
+anchors_preset = 11
+anchor_left = 1.0
+anchor_right = 1.0
+anchor_bottom = 1.0
+offset_left = -25.0
+grow_horizontal = 0
+grow_vertical = 2
+color = Color(0.412152, 0.412152, 0.412152, 1)
+
+[node name="Button" type="Button" parent="."]
+layout_mode = 1
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -121.0
+offset_top = -59.0
+offset_right = 121.0
+offset_bottom = 59.0
+grow_horizontal = 2
+grow_vertical = 2
+text = "CLICK ME!!!"

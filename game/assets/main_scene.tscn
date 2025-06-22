@@ -1,0 +1,9 @@
+[gd_scene load_steps=3 format=3 uid="uid://ctpghd74cpwmx"]
+
+[ext_resource type="Script" uid="uid://ctajmrunwr205" path="res://game/scripts/framework/entry_point/game_entry_point_view.gd" id="1_xp0gf"]
+[ext_resource type="PackedScene" uid="uid://s613tw1ghi8m" path="res://game/assets/screens/manager/start_screen_manager.tscn" id="2_l524q"]
+
+[node name="MainScene" type="Node3D" node_paths=PackedStringArray("container")]
+script = ExtResource("1_xp0gf")
+screen_manager_scene = ExtResource("2_l524q")
+container = NodePath(".")

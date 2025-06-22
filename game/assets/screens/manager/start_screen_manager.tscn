@@ -1,0 +1,45 @@
+[gd_scene load_steps=3 format=3 uid="uid://s613tw1ghi8m"]
+
+[ext_resource type="Script" uid="uid://dgnhymo1dfj0w" path="res://game/scripts/framework/screen_manager/screen_manager_view.gd" id="1_esh33"]
+[ext_resource type="Resource" uid="uid://da7cdydos4kgo" path="res://game/assets/screens/start_screen/start_screen_context_data.tres" id="2_6i86p"]
+
+[node name="ScreenManager" type="Node3D" node_paths=PackedStringArray("world_container", "scene_container", "loader_container")]
+script = ExtResource("1_esh33")
+world_container = NodePath("World")
+scene_container = NodePath("UIManager/CanvasLayer/PopupsContainer")
+loader_container = NodePath("UIManager/CanvasLayer/LoadersContainer")
+start_screen_context = ExtResource("2_6i86p")
+
+[node name="World" type="Node3D" parent="."]
+
+[node name="Environment" type="Node3D" parent="World"]
+
+[node name="Camera3D" type="Camera3D" parent="World/Environment"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, 8)
+projection = 1
+size = 18.0
+
+[node name="DirectionalLight3D" type="DirectionalLight3D" parent="World/Environment"]
+transform = Transform3D(0.83456, 0.282812, -0.472787, 0, 0.858181, 0.513347, 0.550918, -0.428418, 0.716203, 0, 0, 0)
+
+[node name="UIManager" type="Node2D" parent="."]
+
+[node name="CanvasLayer" type="CanvasLayer" parent="UIManager"]
+
+[node name="PopupsContainer" type="Control" parent="UIManager/CanvasLayer"]
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+mouse_filter = 2
+
+[node name="LoadersContainer" type="Control" parent="UIManager/CanvasLayer"]
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+mouse_filter = 2

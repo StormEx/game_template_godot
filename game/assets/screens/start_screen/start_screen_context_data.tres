@@ -1,0 +1,9 @@
+[gd_resource type="Resource" script_class="StartScreenContext" load_steps=3 format=3 uid="uid://da7cdydos4kgo"]
+
+[ext_resource type="PackedScene" uid="uid://cicyw2bbywa34" path="res://game/assets/screens/start_screen/start_screen.tscn" id="1_p5awm"]
+[ext_resource type="Script" uid="uid://bnt7s7xotolv" path="res://game/scripts/game/screens/start/start_screen_context.gd" id="2_p5awm"]
+
+[resource]
+script = ExtResource("2_p5awm")
+screen_scene = ExtResource("1_p5awm")
+metadata/_custom_type_script = "uid://bnt7s7xotolv"

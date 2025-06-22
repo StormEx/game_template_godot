@@ -1,0 +1,11 @@
+[gd_resource type="Resource" script_class="GameScreenContext" load_steps=4 format=3 uid="uid://cc0tb2oea0qjs"]
+
+[ext_resource type="PackedScene" uid="uid://c626cjpcd7pyg" path="res://game/assets/common/loader/common_loader.tscn" id="1_cuqxv"]
+[ext_resource type="PackedScene" uid="uid://b36ydk8eb2jdw" path="res://game/assets/screens/game_screen/game_screen.tscn" id="2_k0gdb"]
+[ext_resource type="Script" uid="uid://c8tysd1iuqmh5" path="res://game/scripts/game/screens/game/game_screen_context.gd" id="3_cuqxv"]
+
+[resource]
+script = ExtResource("3_cuqxv")
+screen_scene = ExtResource("2_k0gdb")
+loader_scene = ExtResource("1_cuqxv")
+metadata/_custom_type_script = "uid://bnt7s7xotolv"
